@@ -69,7 +69,7 @@ export const items = pgTable("bb_item", {
     .notNull()
     .references(() => users.id, { onDelete: "cascade" }),
   name: text("name"),
-  // fileKey: text("fileKey").notNull(),
+  fileKey: text("fileKey").notNull(),
   // currentBid: integer("currentBid").notNull().default(0),
   startingPrice: integer("startingPrice").notNull().default(0),
   // bidInterval: integer("bidInterval").notNull().default(100),
