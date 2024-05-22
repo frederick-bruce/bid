@@ -72,7 +72,7 @@ export const items = pgTable("bb_item", {
   fileKey: text("fileKey").notNull(),
   // currentBid: integer("currentBid").notNull().default(0),
   startingPrice: integer("startingPrice").notNull().default(0),
-  // bidInterval: integer("bidInterval").notNull().default(100),
+  bidInterval: integer("bidInterval").notNull().default(100),
   // endDate: timestamp("endDate", { mode: "date" }).notNull(),
 });
 
